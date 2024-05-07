@@ -1,0 +1,121 @@
+/* General styles */
+:root {
+  --primary-color: #ffd700;
+  --secondary-color: #87ceeb;
+  --tertiary-color: #333;
+  --primary-bg-color: rgb(184, 215, 216);
+  --secondary-bg-color: #87ceeb;
+  --tertiary-bg-color: rgb(128, 109, 0);
+  --hover-color: #ff4500;
+}
+
+body {
+  font-family: "Comic Sans MS", cursive;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-bg-color);
+}
+
+header {
+  background-color: var(--secondary-bg-color); /* Gold */
+  padding: 1% 2%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.7rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--tertiary-color); /* Dark gray */
+}
+
+nav ul li a:hover {
+  color: var(--hover-color); /* OrangeRed */
+}
+
+#main-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+/* .course, */
+.video-course,
+.image-gallery {
+  margin-bottom: 40px;
+  /* max-width: 600px;  Adjust as needed */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h2 {
+  color: var(--tertiary-bg-color);
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  font-size: 2.9rem;
+}
+
+.course {
+  width: 80%;
+}
+
+#course-img {
+  width: 90px;
+}
+
+footer {
+  background-color: var(--secondary-color); /* SkyBlue */
+  text-align: center;
+  padding: 1% 2%;
+  font-size: 1.7rem;
+}
+
+article {
+  border-bottom: 2px solid var(--tertiary-bg-color);
+  margin-bottom: 2.5%;
+  padding: 20px 0;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  width: 80%;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  /* Adjusted for iPad Mini */
+  header {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
