@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kids Educational Website</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="../images/plant.png" alt="image of a plant" />
+      <!-- <h1>Kids</h1> -->
+      <nav>
+        <ul>
+          <li><a href="../index.html">မူလစာမျက်နှာ</a></li>
+          <li><a href="./မြန်မာစာသင်ပုန်းကြီး.html">မြန်မာဖတ်စာ</a></li>
+          <li><a href="./သင်္ချာ.html">သင်္ချာ</a></li>
+          <li><a href="#">အင်္ဂလိပ်စာ</a></li>
+          <li><a href="./ပါဠိ.html">ပါဠိဖတ်စာ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="main-content">
+      <h2>သင်ခန်းစာ-၁ (သင်ရိုးသစ်)</h2>
+      <article class="course">
+        <img id="course-img" src="../images/book.png" alt="Course 1" />
+        <div class="course-info">
+          <h3>အ အာ အား</h3>
+          <p>
+            An interactive course that makes learning math fun and engaging for
+            kids!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+            molestias cum? Debitis officia odit sequi nulla quod laboriosam
+            corporis quasi quaerat repellat aliquid sint, dolorum expedita nobis
+            ipsam a delectus quae voluptas fugit ratione iusto necessitatibus.
+            Doloremque, qui, itaque numquam, magni sapiente ipsa eligendi totam
+            nobis pariatur vel delectus saepe placeat ut non quis quae.
+          </p>
+        </div>
+      </article>
+
+      <article class="course">
+        <img id="course-img" src="../images/cat.png" alt="Course 2" />
+        <div class="course-info">
+          <h3>ဖတ်စာသင်ခန်းစာ</h3>
+          <p>
+            Discover the wonders of science through exciting experiments and
+            activities.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
+            vitae quod quaerat, aut facere ex labore repudiandae exercitationem
+            magni animi commodi illum explicabo odio ipsum laudantium
+            voluptatem? Nihil ad dolorum voluptatibus cum? Porro fugiat expedita
+            aliquam facilis dolorem, sed, maiores suscipit eius incidunt at
+            quidem repudiandae, delectus illum pariatur. Consectetur commodi
+            fugiat enim quaerat. Repellat!
+          </p>
+        </div>
+      </article>
+
+      <article class="video-course course">
+        <h2>YouTube Video Courses</h2>
+        <img id="course-img" src="../images/bird.png" alt="Course 1" />
+        <div class="course-info">
+          <h3>Video သင်ခန်းစာ</h3>
+        <iframe
+        width="860"
+        height="500"
+          src="https://www.youtube.com/embed/YnwGpnkVsvE?si=5t8hLBbEUBQ0Prwx"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+          voluptas?
+        </p>
+      </article>
+
+
+      <article class="quiz course">
+        <h2>Quiz</h2>
+        <img id="course-img" src="../images/bird.png" alt="Course 1" />
+        <div class="course-info">
+          <h3>မေးခွန်းများကိုဖြေပါ</h3>
+          <p>
+            <!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <style>
+                    /* General styles */
+                    h1,
+                    h2 {
+                      text-align: center;
+                    }
+
+                    label {
+                      display: block;
+                      margin-bottom: 10px;
+                    }
+
+                    input[type="radio"],
+                    input[type="checkbox"] {
+                      transform: scale(1.5); /* Increase size */
+                      margin-right: 5px;
+                    }
+
+                    button {
+                      width: 50%;
+                      padding: 20px;
+                      font-size: 2rem;
+                    }
+
+                    button[type="submit"] {
+                      display: block;
+                      margin: 20px auto 0;
+                      padding: 10px 20px;
+                      border: none;
+                      border-radius: 5px;
+                      background-color: #007bff;
+                      color: #fff;
+                      cursor: pointer;
+                    }
+
+                    button[type="submit"]:hover {
+                      background-color: #0056b3;
+                    }
+
+                    #result {
+                      max-width: auto;
+                      margin: 20px auto 0;
+                      padding: 20px;
+                      border: 1px solid #ccc;
+                      border-radius: 10px;
+                    }
+                  </style>
+                </head>
+                <body>
+                  <form id="quizForm">
+                    <h2>Question 1</h2>
+                    <p>What is the capital of France?</p>
+                    <label><input type="radio" name="q1" value="paris" /> Paris</label><br />
+                    <label><input type="radio" name="q1" value="london" /> London</label
+                    ><br />
+                    <label><input type="radio" name="q1" value="berlin" /> Berlin</label
+                    ><br />
+
+                    <h2>Question 2</h2>
+                    <p>Which of the following are colors?</p>
+                    <label><input type="checkbox" name="q2" value="red" /> Red</label><br />
+                    <label><input type="checkbox" name="q2" value="apple" /> Apple</label
+                    ><br />
+                    <label><input type="checkbox" name="q2" value="blue" /> Blue</label><br />
+                    <label><input type="checkbox" name="q2" value="banana" /> Banana</label
+                    ><br />
+
+                    <button type="submit">Submit</button>
+                  </form>
+
+                  <div id="result"></div>
+
+                  <script>
+                    document.getElementById('quizForm').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent form submission
+
+                    // Grading
+                    var q1Answer = document.querySelector('input[name="q1"]:checked');
+                    var q2Answers = document.querySelectorAll('input[name="q2"]:checked');
+                    var q1Score = 0;
+                    var q2Score = 0;
+
+                    if (q1Answer && q1Answer.value === 'paris') {
+                        q1Score = 1;
+                    }
+
+                    q2Answers.forEach(function(answer) {
+                        if (answer.value === 'red' || answer.value === 'blue') {
+                            q2Score += 0.5;
+                        }
+                    });
+
+                    // Calculate total score
+                    var totalScore = q1Score + q2Score;
+
+                    // Display feedback
+                    var feedback;
+                    if (totalScore == 2) {
+                        feedback = "တော်လိုက်တာ! မေးခွန်းအားလုံးမှန်အောင်ဖြေနိုင်ပါတယ်!";
+                    } else if (totalScore == 1) {
+                        feedback = "တော်ပါတယ်! ဒါပေမဲ့ မေးခွန်းတစ်ပဲမှန်အောင်ဖြေနိုင်တယ်.";
+                    } else {
+                        feedback = "ကြိုးစားပါ! ဖတ်စာကိုပြန်ဖတ်ပါ၊ ဖတ်ပြီးယင်ပြန်ဖြေပါ.";
+                    }
+
+                    // Display result
+                    var resultElement = document.getElementById('result');
+                    resultElement.innerHTML = '<h2>Results</h2>';
+                    resultElement.innerHTML += '<p>Question 1 Score: ' + q1Score + '</p>';
+                    resultElement.innerHTML += '<p>Question 2 Score: ' + q2Score + '</p>';
+                    resultElement.innerHTML += '<p>Total Score: ' + totalScore + '</p>';
+                    resultElement.innerHTML += '<p>Feedback: ' + feedback + '</p>';
+                    });
+
+                  </script>
+                </body>
+              </html>
+            </p>
+            </div>
+      </article>
+    </section>
+    <footer>
+      <p>&copy; 2024 Kids Learning (Primary)</p>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
