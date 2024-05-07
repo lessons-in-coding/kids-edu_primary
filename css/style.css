@@ -1,12 +1,13 @@
 /* General styles */
 :root {
-  --primary-color: #ffd700;
+  --primary-color: #4d4018;
   --secondary-color: #87ceeb;
-  --tertiary-color: #333;
-  --primary-bg-color: rgb(184, 215, 216);
+  --tertiary-color: #19be0a;
+  --primary-bg-color: rgba(177, 194, 195, 0.613);
   --secondary-bg-color: #87ceeb;
   --tertiary-bg-color: rgb(128, 109, 0);
   --hover-color: #ff4500;
+  --quiz: rgba(220, 202, 4, 0.539);
 }
 
 body {
@@ -17,13 +18,18 @@ body {
 }
 
 header {
-  background-color: var(--secondary-bg-color); /* Gold */
+  background-color: var(--primary-color); /* Gold */
   padding: 1% 2%;
   text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.7rem;
+}
+
+#logo {
+  width: 75px;
+  padding-left: 25px;
 }
 
 nav ul {
@@ -82,24 +88,30 @@ section h2 {
 }
 
 footer {
-  background-color: var(--secondary-color); /* SkyBlue */
+  background-color: var(--primary-color); /* SkyBlue */
+  color: var(--tertiary-color);
   text-align: center;
   padding: 1% 2%;
   font-size: 1.7rem;
 }
 
 article {
-  border-bottom: 2px solid var(--tertiary-bg-color);
-  margin-bottom: 2.5%;
-  padding: 20px 0;
+  border-bottom: 1px solid var(--tertiary-bg-color);
+  margin: 2.5% 0;
+  padding: 1.5% 0;
 }
 
 .quiz {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--primary-color);
+  background-color: var(--quiz);
   width: 80%;
+}
+
+.quiz h2,
+h3 {
+  color: var(--tertiary-color);
 }
 
 /* Responsive styles */
