@@ -177,12 +177,12 @@
                     var q2Score = 0;
 
                     if (q1Answer && q1Answer.value === 'paris') {
-                        q1Score = 1;
+                        q1Score = 5;
                     }
 
                     q2Answers.forEach(function(answer) {
                         if (answer.value === 'red' || answer.value === 'blue') {
-                            q2Score += 0.5;
+                            q2Score += 2.5;
                         }
                     });
 
@@ -191,12 +191,16 @@
 
                     // Display feedback
                     var feedback;
-                    if (totalScore == 2) {
+                    if (totalScore == 10) {
                         feedback = "တော်လိုက်တာ! မေးခွန်းအားလုံးမှန်အောင်ဖြေနိုင်ပါတယ်!";
-                    } else if (totalScore == 1) {
-                        feedback = "တော်ပါတယ်! ဒါပေမဲ့ မေးခွန်းတစ်ပဲမှန်အောင်ဖြေနိုင်တယ်.";
+                    } else if (totalScore == 5) {
+                        feedback = "တော်ပါတယ်! မေးခွန်း(၁)တစ်ခုထဲကိုပဲ မှန်အောင်ဖြေနိုင်တယ်။";
+                    } else if (totalScore == 7.5) {
+                        feedback = "မဆိုးပါဘူး! မေးခွန်း(၁)ကို ဖြေနိုင်ပေမယ့် မေးခွန်း(၂)က တစ်ဝက်ပဲမှန်အောင်ဖြေနိုင်တယ်။";
+                    } else if (totalScore == 2.5) {
+                        feedback = "မဆိုးလှပါဘူး! ဒါပေမဲ့ မေးခွန်း(၁)အဖြေက မှားတယ်၊  မေးခွန်း(၂)က တစ်ဝက်ပဲမှန်အောင်ဖြေနိုင်တယ်။";
                     } else {
-                        feedback = "ကြိုးစားပါ! ဖတ်စာကိုပြန်ဖတ်ပါ၊ ဖတ်ပြီးယင်ပြန်ဖြေပါ.";
+                        feedback = "ကြိုးစားပါ! ဖတ်စာကိုပြန်ဖတ်ပါ၊ ဖတ်ပြီးယင်ပြန်ဖြေပါ။";
                     }
 
                     // Display result
